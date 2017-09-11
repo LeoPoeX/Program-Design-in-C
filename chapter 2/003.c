@@ -3,7 +3,7 @@
 void main()
 {
     int a,b,c,d;
-    unsigned u;
+    unsigned int u;
     a=12;
     b=-24;
     u=10;

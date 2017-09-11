@@ -6,7 +6,7 @@ main()
     printf("input two numbers:\n");
     scanf("%d%d",&x,&y);
     z=max(x,y);
-    printf("maxmun=%d",2);
+    printf("maxmun=%d",z);
 }
 
 int max (int a,int b)

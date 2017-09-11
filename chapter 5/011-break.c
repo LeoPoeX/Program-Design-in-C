@@ -14,9 +14,11 @@ void main()
             printf("%c\n",c);
         }
         if (c == 27)
-            break;      //判断若按Esc键则退出循环
-            i++;
-            printf("The No.is %d\n",i);
+        {
+            break;     //判断若按Esc键则退出循环
+        }
+        i++;
+        printf("The No.is %d\n",i);
     }
     printf("The End");
 }
