@@ -6,6 +6,6 @@ void main()
     double result;
 
     result = pow(x, y);
-    printf("%f的%f次方是%f \n",x,y,result);
+    printf("%f of %f power is %f\n",x,y,result);
     return (0);
 }
