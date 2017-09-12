@@ -1,2 +1,2 @@
-*.o
-*.exe
+Program-Design-in-C/chapter */*.o
+Program-Design-in-C/chapter */*.exe
