@@ -1,61 +1,31 @@
 #include<stdio.h>
 
-void main()
+int main(void)
 {
-    float money;
-    //100,50,10,5,2,1,1角，5分，1分
-    int hundred, fifty, ten, five, two, one, dime, fivepence, penny;
-
-    hundred = fifty = ten = five = two = one = dime = fivepence = penny = 0;
+    double money;
 
     printf("Enter an amount,for example:345.78\n");
-    scanf("%f", &money);
+    scanf("%lf", &money);
 
-    while (money > 100)
-    {
-        money = money - 100;
-        hundred++;
-    }
-    while (money > 50)
-    {
-        money = money - 50;
-        fifty++;
-    }
-    while (money > 10)
-    {
-        money = money - 10;
-        ten++;
-    }
-    while (money > 5)
-    {
-        money = money - 5;
-        five++;
-    }
-    while (money > 2)
-    {
-        money = money - 2;
-        two++;
-    }
-    while (money > 1)
-    {
-        money = money - 1;
-        one++;
-    }
-    while (money > 0.1)
-    {
-        money = money - 0.1;
-        dime++;
-    }
-    while (money > 0.05)
-    {
-        money = money - 0.05;
-        fivepence++;
-    }
-    while (money > 0.01)
-    {
-        money = money - 0.01;
-        penny++;
-    }
+    printf("mo: %lf\n", money);
 
-    printf("100RMB,50RMB,10RMB,5RMB,2RMB,1RMB,1jiao,5fen,1fen each with:%d,%d,%d,%d,%d,%d,%d,%d,%d",hundred, fifty, ten, five, two, one, dime, fivepence, penny);
+    money = money + 0.005;
+    int mo = (int)(money * 100);
+    printf("mo: %d\n", mo);
+
+    int d;
+    int a[9] = {10000,5000,1000,500,200,100,10,5,1};
+    int n[9];
+
+        for(d = 0; d < 9; d++)
+        {
+            n[d] = mo / a[d];
+            printf("n[d] : %d\n", n[d]);
+            mo = mo % a[d];
+            printf("mo %d \n", mo);
+        }
+
+    printf("100RMB,50RMB,10RMB,5RMB,2RMB,1RMB,1jiao,5fen,1fen each with: %d,%d,%d,%d,%d,%d,%d,%d,%d",n[0], n[1], n[2], n[3], n[4], n[5], n[6], n[7], n[8]);
+	
+	printf("\n"); 
 }
