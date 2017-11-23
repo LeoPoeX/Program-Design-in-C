@@ -39,7 +39,7 @@ int main()
     printf("\n");  
     system("pause");  
 }  
-
+	//创建链表 
 struct student *creat()  
 {  
     struct student *head;  
@@ -72,7 +72,7 @@ struct student *creat()
     p2->next=NULL;  
     return head;  
 }
-
+	//删除结点 
 struct student *del(struct student *head,int num)  
 {  
     struct student *p1,*p2;  
@@ -107,7 +107,7 @@ struct student *del(struct student *head,int num)
 end:  
     return head;  
 }
-
+	//打印链表 
 void print(struct student *head)  
 {  
     struct student *p;  
@@ -122,7 +122,7 @@ void print(struct student *head)
         }while(p);  
     }  
 }  
-
+	//插入结点 
 struct student *insert(struct student *head,struct student *stu_2)  
 {  
     struct student *p0,*p1,*p2;  
